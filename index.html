@@ -1,0 +1,1298 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+
+	
+	
+	 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />    
+	    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mineum - Virtual Mining community </title>
+        <meta name="description" content="Mineum, virtual miner and community on the Solana Blockchain">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126960286-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-126960286-1');
+		</script>
+		
+        <!-- CSS Dependencies -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/shards.min.css?version=2.0.1">
+        <link rel="stylesheet" href="css/shards-extras.min.css?version=2.0.1">
+		<link rel="stylesheet" href="css/counter.css">
+		
+
+		
+		
+<!-- fog style -->		
+<style>		
+/* ---------- Fog ---------- */
+.fogwrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+#foglayer_01, #foglayer_02, #foglayer_03 {
+  height: 100%;
+  position: absolute;
+  overflow-z: hidden
+  width: 200%;
+}
+#foglayer_01 .image01, #foglayer_01 .image02,
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+#foglayer_01 {
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 25s linear infinite;
+}
+#foglayer_02, #foglayer_03 {
+  -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 22s linear infinite;
+}
+
+/* ---------- Moving Fog ---------- */
+/*
+  'size: cover' || 'size: 100%'; results remain the same
+  'attachment: scroll' can be added or removed; results remain the same
+  'attachment: fixed' causing unexpected results in Chrome
+  'repeat-x' || 'no-repeat'; results remain the same
+*/ 
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png") center center/cover no-repeat transparent;
+}
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02{
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") center center/cover no-repeat transparent;
+}
+
+/* ---------- Keyframe Layer 1 ---------- */
+@-webkit-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-moz-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-o-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+/* ---------- Keyframe Layer 2 ---------- */
+@-webkit-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-moz-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-o-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+/* ---------- Keyframe Layer 3 ---------- */
+@-webkit-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-moz-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-o-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@keyframes foglayer_03_opacity {
+  0% { opacity: .8; }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+/* ---------- Keyframe moveMe ---------- */
+@-webkit-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-moz-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-o-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@media only screen
+  and (min-width: 280px)
+  and (max-width: 767px) {
+    #foglayer_01 .image01, #foglayer_01 .image02,
+    #foglayer_02 .image01, #foglayer_02 .image02,
+    #foglayer_03 .image01, #foglayer_03 .image02 {
+      width: 100%;
+    }
+  }
+</style>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<!-- Countdown till next payout script -->	
+<script>
+var curday;
+var secTime;
+var ticker;
+ 
+function getSeconds() {
+ var nowDate = new Date();
+ var dy = 0 ; //Sunday through Saturday, 0 to 6
+ var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),20,0,0); //20 out of 24 hours = 8pm
+ 
+ var curtime = nowDate.getTime(); //current time
+ var atime = countertime.getTime(); //countdown time
+ var diff = parseInt((atime - curtime)/1000);
+ if (diff > 0) { curday = dy - nowDate.getDay() }
+ else { curday = dy - nowDate.getDay() -1 } //after countdown time
+ if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
+ if (diff <= 0) { diff += (86400 * 7) }
+ startTimer (diff);
+}
+ 
+function startTimer(secs) {
+ secTime = parseInt(secs);
+ ticker = setInterval("tick()",1000);
+ tick(); //initial count display
+}
+ 
+function tick() {
+ var secs = secTime;
+ if (secs>0) {
+  secTime--;
+ }
+ else {
+  clearInterval(ticker);
+  getSeconds(); //start over
+ }
+ 
+ var days = Math.floor(secs/86400);
+ secs %= 86400;
+ var hours= Math.floor(secs/3600);
+ secs %= 3600;
+ var mins = Math.floor(secs/60);
+ secs %= 60;
+ 
+ //update the time display
+ document.getElementById("days").innerHTML = curday;
+ document.getElementById("hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours;
+ document.getElementById("minutes").innerHTML = ( (mins < 10) ? "0" : "" ) + mins;
+ document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs;
+}
+</script>
+		
+		
+
+<!-- Side scrollbar colour and size -->		
+	<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4bc4d8; 
+}
+</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- SBD in the pool script -->	
+
+<script src="https://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  
+	  	<script> 
+		
+		//SBD in the pool script
+		
+	 var user=["steemeum"]
+	var i;
+	
+	steem.api.getAccounts(user, function(err, result) {
+		for(i=0;i<user.length;i++){
+			var data=result[i];
+			eval('var obj='+data["json_metadata"]);
+			var display='<b><i>'+data["sbd_balance"]+' ≈ </i></b>';
+ 			
+ 			$("#user").append(display);
+ 			
+  		}
+	});
+</script>
+
+
+  
+		
+		
+    </head>
+	
+    <body class="shards-app-promo-page--1">
+	
+	
+
+	
+	<body onload = "getSeconds()">
+	
+      <!-- Welcome Section -->
+      <div class="welcome d-flex justify-content-center flex-column">
+	  			    	   
+			<!-- animated fog -->			   
+<div id="foglayer_01" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<div id="foglayer_02" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<div id="foglayer_03" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+		
+        <div class="container">
+		
+          <!-- Navigation -->
+          <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
+            <a class="navbar-brand mr-5" href="#">
+              <img src="images/app-promo/MineumlogoBW-03.png" width="auto" height="75" style="opacity: 0.5; class="mr-2" alt="Mineum virtual mobile mining">
+			  </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+
+                  <a class="nav-link" href="#" target="_blank">Miner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#statistics" target=""><i class="fas fa-chart-area"></i>&nbsp Statistics</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="#rankings" target=""><i class="fas fa-trophy"></i>&nbsp Rankings</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="#rewards" target=""><i class="fas fa-medal"></i>&nbsp Rewards</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="#settings" target=""><i class="fas fa-cogs"></i>&nbsp Settings</a>
+                </li>				
+				<li class="nav-item">
+                  <a class="nav-link" href="#information" target=""><i class="fas fa-info"></i>&nbsp Information</a>
+                </li>
+				<li class="nav-item">
+                 
+                </li>
+				<li class="nav-item">
+				
+
+
+			</li>	
+              </ul>
+
+              <!-- Social Icons -->
+			  
+			  <ul class="header-social-icons navbar-nav ml-auto">
+                <li class="nav-item">                  	
+                </li>
+				                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>              
+              </ul>
+			  
+
+            </div>
+          </nav>
+
+          <!-- / Navigation -->
+        </div> <!-- .container -->
+
+		
+		
+		
+  
+
+
+
+		
+		
+        <!-- Inner Wrapper -->
+        <div class="inner-wrapper mt-auto mb-auto container">
+		
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-3">
+                <img src="images/app-promo/Mineumlogo1.png" width="auto" height="250" alt="">
+				<br></br>
+				<br></br>
+				<br></br>
+                <p class="text-muted">Mineum is a virtual Mining initiative and community on the Solana Blockchain. To use Mineum you need to have a free <a href="https://solflare.com/">Solana wallet and a Google account.</a></p>
+
+
+				
+                <div class="d-block mt-4">
+                  <a href="https://steem.io/" target="_blank"><img class="w-25 mt-2" src="images/app-promo/badge-steem.png" alt=""></a>
+				  <a href="https://steemit.com/@steemeum" target="_blank"><img class="w-25 mt-2" src="images/app-promo/badge-steemit.png" alt=""></a>
+				  <a href="https://fundition.io/#!/@steemeum/06rjwt4f7" target="_blank"><img class="w-25 mt-2" src="images/app-promo/badge-fundition.png" alt=""></a>
+				  
+                </div>
+				
+            </div>
+
+	
+			
+			
+		<!-- Miner card -->			
+			
+            <div class="col-lg-4 col-md-5 col-sm-12 ml-auto">
+                  <br></br>
+				  <div class="card mb-4">
+				  
+                      <div class="card-body">
+                      
+					 
+                      <p class="card-text"><i class="fas fa-clock"></i>&nbsp Mined time: <b>00:00:00</b> <br /> <font size="2" style="color:#DDDDDD;" >Counts up your minded time</font><div class="progress mb-4"><div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div></p>
+					  
+					  <p class="card-text"><i class="fas fa-cloud-download-alt"></i>&nbsp Time to Payout: <b>00:00:00</b> <br /> <font size="2" style="color:#DDDDDD;">Counts down cloud time</font><div class="progress mb-4"><div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div></p>
+					  
+					  <p class="card-text"><i class="fas fa-trophy"></i>&nbsp Your current rank: <b>#24</b> <br /> <font size="2" style="color:#DDDDDD;"><b>#1</b> @ptaku, <b>#2</b> @emsonic, <b>#3</b> @bbvedf</font></p>
+					  <p class="card-text"><i class="fas fa-users"></i>&nbsp Active users: <b>219</b></p>
+					 
+					 
+					 <br />
+					  <a class="btn btn-outline-success btn-normal" href="https://discord.gg/yQMmmFw" target="_blank">START MINING </a>  <a class="btn btn-outline-light" href="https://discord.gg/yQMmmFw" target="_blank">STOP MINING</a>
+                      
+                    </div>
+               
+			   </div>
+			  
+             </div>
+					<!-- / time until next payout -->	
+          </div>
+		  <center>
+			<div id="countholder" >
+				<div><span class="days" id="days"></span><div class="smalltext">Days</div></div>
+				<div><span class="hours" id="hours"></span><div class="smalltext">Hours</div></div>
+				<div><span class="minutes" id="minutes"></span><div class="smalltext">Minutes</div></div>
+				<div><span class="seconds" id="seconds"></span><div class="smalltext">Seconds</div></div>
+				<p><font size="3">Time until next <b>SOL</b> rewards are send out. (Sunday 12am (UTC) )  &nbsp &nbsp &nbsp Current rewards in the pool: <b>62 SOL</b> &nbsp <span id="user"></font></p> 
+				
+			</div>
+		</center>
+
+		
+        </div>		
+        <!-- / Inner Wrapper -->				  
+
+      </div>
+	        <!-- / Welcome Section -->
+	  
+
+	  
+	  
+    <!-- Statistics -->
+      <div class="blog section section-invert py-4"> 
+	  			
+				
+		<a name="statistics"> 		
+
+        <h3 class="section-title text-center m-5"><i class="fas fa-chart-area" style="color:#DDDDDD;" ></i> &nbsp Statistics</h3>
+        <div class="container">
+		<center><p class="text-muted">Pool and miner related statistics, historical statistics can be found in the <a href="https://steemit.com/@steemeum">Daily miner and Statistics post.</a></p></center>
+          <div class="py-4">
+            <div class="row">
+              <div class="card-deck">
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                      <div class="card-body">
+                      <h4 class="card-title">248</h4>
+                      <p class="card-text"><i class="fas fa-users"></i>&nbsp Total users this week</p>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">219</h4>
+                      <p class="card-text"><i class="fas fa-users"></i>&nbsp Users active now</p>
+					                       
+					 </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">0.248</h4>
+                      <p class="card-text"><i class="fas fa-money-bill-wave"></i>&nbsp Average payout (SOL)</p>
+                                       
+				   </div>
+								
+                  </div>				
+				 </div>
+				 
+				  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">26,87</h4>
+                      <p class="card-text"><i class="fas fa-money-bill-wave"></i>&nbsp Currently in the pool ≈ (SOL)</p>
+				
+					  
+                   	 </div>
+                  </div>
+                </div>
+				
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">6:05:46:21  </h4>
+                      <p class="card-text"><i class="fas fa-clock"></i>&nbsp Time until next payout (d:h:m:s)</p>
+				
+					  
+                   	 </div>
+                  </div>
+                </div>
+				
+				
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">1,379</h4>
+                      <p class="card-text"><i class="fas fa-money-bill-wave"></i>&nbsp SOL Price (USD)</p>
+				
+					  
+                   	 </div>
+                  </div>
+				 </div>
+				 
+				 
+			   </div>
+            </div>			
+          </div>
+        </div>
+		
+      </div>
+      <!-- / Statistics -->
+
+
+			  
+	  
+ 	  
+	 <!-- Rankings -->
+	 
+	 			
+      <div class="blog section section-invert py-4"> 	
+
+
+        <h3 class="section-title text-center m-5"><i class="fas fa-trophy" style="color:#DDDDDD;" > </i> &nbsp Rankings</h3>
+		
+        <div class="container">
+          <div class="py-4">
+            <div class="row">
+              <div class="card-deck">
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+				  <!--  <img class="card-img-top" src="images/common/header-supportive.jpg" alt="Card image cap">    -->
+                     <div class="card-body">
+                        <h5>Current ranking</h5>
+                    
+                      <p class="card-text">Mine the most time and get the highest reward.</p>
+					  
+					  	<table>
+  <tr>
+    <th>Rank &nbsp &nbsp</th>
+    <th>Username &nbsp &nbsp</th>
+    <th>Upvoted &nbsp &nbsp</th>
+    <th>Time  &nbsp &nbsp</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Username123</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>username456</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>username689</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>username289</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>username719</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>username349</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>username749</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>username473</td>
+    <td>Yes</td>
+    <td>18:00</td>
+  </tr>
+</table>
+                      
+                    </div>
+                  </div>
+                </div>
+
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+				    <!--  <img class="card-img-top" src="images/common/header-supportive.jpg" alt="Card image cap">    -->
+                     <div class="card-body">
+                        <h5>Last week ranking</h5>
+						<p class="card-text">The rankings from the previous week, well done: </p>
+				
+					  	<table>
+  <tr>
+    <th>Rank &nbsp &nbsp</th>
+    <th>Username  &nbsp</th>
+   
+  </tr>
+<tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>1</td>
+    <td>Username456</td>
+    <td>294.129</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Username456</td>
+    <td>34.121</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Username456</td>
+    <td>25.247</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Username456</td>
+    <td>20.254</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Username456</td>
+    <td>16.124</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Username456</td>
+    <td>14.981</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Username456</td>
+    <td>11.470</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Username456</td>
+    <td>10.210</td>
+  </tr>
+</table>
+					                       
+					 </div>
+                  </div>
+                </div>
+
+ 
+				 
+	
+				
+
+				
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+				  <!--  <img class="card-img-top" src="images/common/header-supportive.jpg" alt="Card image cap">    -->
+                     <div class="card-body">
+                        <h5>New users</h5>					 
+                        <p class="card-text">The latest and most new Users that have joined <a href="https://signup.steemit.com/">Mineum</a> the most in a post. </p>
+				
+					  	<table>
+  <tr>
+    <th>Rank &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+    <th>Username &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </th>
+    <th>Posts  &nbsp &nbsp</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Username456</td>
+    <td>862</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Username456</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Username456</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Username456</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Username456</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Username456</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Username456</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Username456</td>
+    <td>10</td>
+  </tr>
+</table>
+					  
+                   	 </div>
+                  </div>
+                </div>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Rankings -->	  
+
+	 
+
+
+
+
+	  <!-- Rewards -->
+      <div class="blog section section-invert py-4"> 
+	  			
+				
+			<a name="rewards">	
+
+        <h3 class="section-title text-center m-5"><i class="fas fa-medal" style="color:#DDDDDD;" ></i> &nbsp Rewards</h3>
+        <div class="container">
+          <div class="py-4">
+            <div class="row">
+              <div class="card-deck">
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+				  <!--  <img class="card-img-top" src="images/common/header-supportive.jpg" alt="Card image cap">    -->
+                     <div class="card-body">
+                        <h5>SOL</h5>
+                    
+                      <p class="card-text" >Total received: <b>4.841 SOL</b></p>
+					  <p class="card-text">Improve the weekly SOL rewards pool by voting for our Validator server  <a href="https://fundition.io/">Daily miner and Statistics post.</a></p>
+					  
+					  	<table>
+  <tr>
+    <th>Week &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+    <th>Amount  &nbsp &nbsp</th>
+  </tr>
+  <tr>
+    <td>Week 8</td>
+    <td>0.253</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Week 7</td>
+    <td>0.385</td>
+  </tr>
+  <tr>
+    <td>Week 6</td>
+    <td>0.307</td>
+  </tr>
+  <tr>
+    <td>Week 5</td>
+    <td>0.201</td>
+  </tr>
+  <tr>
+    <td>Week 4</td>
+    <td>0.178</td>
+  </tr>
+  <tr>
+    <td>Week 3</td>
+    <td>0.249</td>
+  </tr>
+  <tr>
+    <td>Week 2</td>
+    <td>0.189</td>
+  </tr>
+  <tr>
+    <td>Week 1</td>
+    <td>0.224</td>
+  </tr>
+</table>
+                      
+                    </div>
+                  </div>
+                </div>
+
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+				  <!--  <img class="card-img-top" src="images/common/header-supportive.jpg" alt="Card image cap">    -->
+                     <div class="card-body">
+                        <h5>other coin</h5>
+                        <p class="card-text"></i>Total received: <b>37 OTHER</b></p>
+						<p class="card-text">Get FUTURE tokens, every week <b>6000</b> Future in the pool, to be shared. Keep or use them in <a href="https://drugwars.io/">Drugwars</a></p>
+				
+					 					  	<table>
+  <tr>
+    <th>Week &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+    <th>Amount  &nbsp &nbsp</th>
+  </tr>
+  <tr>
+    <td>Week 8</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Week 7</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Week 6</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Week 5</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Week 4</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Week 3</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Week 2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Week 1</td>
+    <td>4</td>
+  </tr>
+</table>
+					                       
+					 </div>
+                  </div>
+                </div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+		
+				
+				
+				
+				
+	
+
+
+	
+
+				
+				
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+				  <!--  <img class="card-img-top" src="images/common/header-supportive.jpg" alt="Card image cap">    -->
+                     <div class="card-body">
+                        <h5><i class="fa fa-calculator"> &nbsp; </i>SOL rewards calculator</h5>
+						<div>		
+
+				
+        
+		</form>
+</div>
+                    
+<br />
+	
+	 	 
+		 
+	 <p>Calculate the total received miner rewards (SOL) by typing in your, or one of the other users there wallet address</p>		
+	     <!-- / based on 10.000 transactions -->
+		 <form id="search-form" action="index.html">
+		 <input type="text" size="16" id="search-user" placeholder="Wallet address"> &nbsp;
+				<button type="submit"><i class="fa fa-search" ></i></button></th>
+				
+				<br></br>
+<p><span id="tagline"></span></P>
+
+<table>
+  <tr>
+    <td><p id="stats-title">Total SOL received by </p></td>
+    <td><b><h5 style="color:#4bc4d8; class="text-xl font-bold" id="steem-gained">0 SOL</h5></b></td>
+  </tr>
+</table>
+
+<br />
+<br />
+<br />		
+<br />	
+<br />					  
+                   	 </div>
+                  </div>
+                </div>
+
+
+				
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Rewards -->
+
+
+
+	  
+	  
+	 
+
+	
+ <!--  Rewards calculator, random user -->
+<script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	
+<script>
+/* jQuery Easy Randomized Words */
+/* by Andrew Errico / July 2014 */
+
+$(document).ready( function () {
+	
+	words = [
+           
+    "User456",
+    "User789",
+    "User147",
+    "User778",
+    "User772",
+    "User742"
+]
+  
+  var timer     = 3600,
+      fadeSpeed =  500;
+  
+  var count = words.length;
+  var position, x, myLoop;
+
+  $('#tagline').html(words[rand(count)]);
+
+	function rand(count) {
+		x = position;
+		position = Math.floor(Math.random() * count);
+		if (position != x) {
+      return position;
+    } else {
+      rand(count);
+    }
+	}
+	
+	function newWord() {
+    //clearTimeout(myLoop); //clear timer
+    
+    // get new random number
+    position = rand(count);
+    
+    // change tagline
+    $("#tagline").fadeOut(fadeSpeed, function() {
+      $(this).html(words[position]).fadeIn(fadeSpeed);
+    });
+    myLoop = setTimeout(function() {newWord()}, timer);
+  }
+  
+  myLoop = setTimeout(function() {newWord()}, timer);
+
+});
+
+</script>
+
+
+
+ <!--  Rewards calculator, random user -->
+<style>
+
+#tagline { 
+  font-size: 20px; 
+ 
+  font-weight: bold;
+  color:#4bc4d8; 
+  text-transform: lowercase;
+    padding: 20px 2px;
+  text-align: center;  
+
+}
+</style>
+
+<center>
+<div>
+  
+</div>
+</center>
+	  
+	  
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/steem.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	     
+	  
+	  
+	  
+	  
+	  
+	  <!-- Social Media -->
+      <div class="blog section section-invert py-4">	
+
+        <h3 class="section-title text-center m-5"><i class="fas fa-share-square" style="color:#DDDDDD;" ></i> &nbsp Social Media</h3>
+        <div class="container">
+          <div class="py-4">
+            <div class="row">
+              <div class="card-deck">
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                    <!-- <img class="card-img-top" src="images/common/card-1.jpg" alt="Card image cap">  -->
+                    <div class="card-body">
+                      <h4 class="card-title">Follow on </h4>
+                      <p class="card-text">Read the latest Mineum news on "this website".</p>
+                      <a class="btn btn-outline-success btn-normal" href="" target="_blank">Website &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                    <!-- <img class="card-img-top" src="images/common/card-3.jpg" alt="Card image cap">  --> 
+                    <div class="card-body">
+                      <h4 class="card-title">Chat on Discord</h4>
+                      <p class="card-text">Join the Mineum Discord chat, and get in contact with other users.</p>
+					  
+                      <a class="btn btn-outline-success btn-normal" href="https://discord.gg/yQMmmFw" target="_blank">Discord &rarr;</a>
+					  </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                    <!-- <img class="card-img-top" src="images/common/card-2.jpg" alt="Card image cap">  -->
+                    <div class="card-body">
+                      <h4 class="card-title">Follow on Twitter</h4>
+                      <p class="card-text">Read our latest tweets, and follow the Mineum project on Twitter.</p>
+                      <a class="btn btn-outline-success btn-normal" href="https://twitter.com/steemeum" target="_blank">Twitter &rarr;</a>
+                   
+				   </div>
+								
+                  </div>
+				  
+				  
+				  
+				  
+					<br></br>	
+                </div>
+				
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		<!--<div class="container py-4">-->
+          <div class="row justify-content-md-center px-4">
+            <div class="contact-form col-sm-12 col-md-10 col-lg-7 p-4 mb-4 card">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+					<h4 class="card-title">Comment on latest post.</h4>
+                        <label for="exampleInputEmail1">Message</label>
+                        <textarea id="exampleInputEmail1" class="form-control mb-4" rows="3" placeholder="Enter your message..." name="message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <input class="btn btn-outline-success btn-normal d-flex ml-auto mr-auto" type="submit" value="Send Your Message">
+              </form>
+            </div>
+          </div>
+		  <br></br>
+        </div>
+		
+      </div>
+      <!-- / Social media -->
+	  
+
+	  
+	  <a name="settings">
+	  
+	  
+	  
+	  <!-- Settings -->
+      <div class="subscribe section bg-dark py-4">
+	  
+        <h3 class="section-title text-center text-white m-5"><i class="fas fa-cogs" style="color:#8c8c8c8c;" ></i> &nbsp Settings</h3>
+<form class="form-inline d-table mb-5 mx-auto" action="/">
+          <div class="form-group">
+			
+		    </div>			
+        </form>
+
+		<div class="container">
+		<center><p class="text-muted"></a></p></center>
+          <div class="py-4">
+            <div class="row">
+              <div class="card-deck">
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                      <div class="card-body">
+                      <h4 class="card-title">Auto mine</h4>
+                      <p class="card-text"><i class="fas fa-arrow-circle-up"></i>&nbsp Automatically start mining when the page is loaded.</p>
+					  <div class="custom-control custom-toggle d-block my-1"><input type="checkbox" id="customToggle1" name="customToggle1" class="custom-control-input"><label class="custom-control-label" for="customToggle1">Autovote</label></div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">Messages</h4>
+                      <p class="card-text"><i class="fas fa-arrow-circle-up"></i>&nbsp Recieve status and maintenance messages.</p>
+					   <div class="custom-control custom-toggle d-block my-2"><input type="checkbox" id="customToggle2" name="customToggle2" class="custom-control-input"><label class="custom-control-label" for="customToggle2">Autovote</label></div>                   
+					 </div>
+                  </div>
+                </div>
+
+				
+								  <div class="col-md-12 col-lg-4">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                      <h4 class="card-title">Setting</h4>
+                      <p class="card-text"><i class="fas fa-gavel"></i>&nbsp Some text about the setting. to explain its function</p>
+				      <a class="btn btn-outline-success btn-normal" href="https://signup.steemit.com" target="_blank">ON →</a>  <button type="button" class="btn btn-outline-warning">OFF</button>   
+					  
+                   	 </div>
+                  </div>
+				 </div>
+			   </div>
+            </div>			
+          </div>
+        </div>
+		
+       
+	  
+      <!-- / settings -->  
+
+
+	  
+	  
+
+
+
+      <!-- Footer Section -->
+      <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <img src="images/app-promo/mineum-logo.png" class="mr-2" alt="Mineum virtual mining">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Miner <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://discord.gg/yQMmmFw" target="_blank" >Support</a>
+                </li>
+				</ul>
+            </div>
+          </div>
+        </nav>
+      </footer>
+      <!-- / Footer Section -->
+
+      <!-- JavaScript Dependencies -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
